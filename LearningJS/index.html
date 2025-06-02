@@ -10,6 +10,7 @@
 <body>
     <h1 id="heading1">Hello Everyone, we are about to use Javascript within html</h1>
     <p id="paragraph1">This is a simple example of how to include JavaScript in an HTML document.</p>
+    <p id="paragraph2"></p>
     
     <script>
         
@@ -17,6 +18,15 @@
         var text2;
         var text3;
 
+        //Here we are declaring variables in one line
+        //Variables are used to store data that can be used later in the code
+        var numA = 10;
+        var numB = 20;
+
+        //We can also declare variables in one line 
+        var numC = 30, numD = 40, numE = 50;
+
+        //here we are assigning text to the variables
         text1 = "Hello everyone";
         text2 = "I love learning JS";
         text3 = "This is a simple example of how to include JavaScript in an HTML document.";
@@ -24,6 +34,9 @@
 
         document.getElementById("heading1").innerHTML = text1;
         document.getElementById("paragraph1").innerHTML = text2 + "<br>" + text3;
+
+        //variables 2
+        document.getElementById("paragraph2").innerHTML = numA + " x " + numB + " = " + numA * numB;
         // This is a single line comment
 
     </script>
