@@ -12,15 +12,20 @@
     <p id="paragraph1">This is a simple example of how to include JavaScript in an HTML document.</p>
     
     <script>
-        // This is a simple JavaScript function to change the content of the heading and paragraph
-        function changeContent() {
-            document.getElementById("heading1").innerHTML = "Hello, JavaScript!";
-            document.getElementById("paragraph1").innerHTML = "JavaScript is now" + " changing this text!";
-            console.log("Content changed successfully!");
-        }
+        
+        var text1;
+        var text2;
+        var text3;
 
-        // Call the function to change the content when the script loads
-        changeContent();
+        text1 = "Hello everyone";
+        text2 = "I love learning JS";
+        text3 = "This is a simple example of how to include JavaScript in an HTML document.";
+
+
+        document.getElementById("heading1").innerHTML = text1;
+        document.getElementById("paragraph1").innerHTML = text2 + "<br>" + text3;
+        // This is a single line comment
+
     </script>
 </body>
 </html>
