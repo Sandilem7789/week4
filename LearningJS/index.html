@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascriot</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="heading1">Hello Everyone, we are about to use Javascript within html</h1>
+    <p id="paragraph1">This is a simple example of how to include JavaScript in an HTML document.</p>
+    
+    <script>
+        // This is a simple JavaScript function to change the content of the heading and paragraph
+        function changeContent() {
+            document.getElementById("heading1").innerHTML = "Hello, JavaScript!";
+            document.getElementById("paragraph1").innerHTML = "JavaScript is now" + " changing this text!";
+            console.log("Content changed successfully!");
+        }
+
+        // Call the function to change the content when the script loads
+        changeContent();
+    </script>
+</body>
+</html>
