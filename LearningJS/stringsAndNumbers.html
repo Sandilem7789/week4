@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings & Numbers in Javascript</title>
+</head>
+<body>
+    <p id="outputText"></p>
+
+    <script>
+        var text1 = "63";
+        var text2 = "5";
+
+        var number1 = stringToNumber(text1);
+        var number2 = stringToNumber(text2);
+
+        if( isNaN(number1) || isNaN(number2)) {
+            document.getElementById("outputText").innerHTML = "One or both of the inputs are not valid numbers.";
+            throw new Error("Invalid input: One or both of the inputs are not valid numbers.");
+        } else {
+            document.getElementById("outputText").innerHTML = "The sum of " + text1 + " and " + text2 + " is: " + ((number1) + (number2));
+        }
+        /**
+         * Converts a string to a number.
+         * @param {string} str - The string to convert.
+         * @returns {number} The converted number.
+         */        
+
+        function stringToNumber(str) {
+            return parseInt(str);
+        }
+    </script>
+</body>
+</html>
