@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope in JavaScript</title>
+</head>
+<body>
+    <p id="outputText"></p>
+    <a href="loginForm.html">Login</a>
+    
+    <script>
+        var someVariable = 100;
+        someFunction(); // Call the function to execute it
+
+
+        // refers to where a variable is accessible in the code
+        // Global scope: variable is accessible everywhere in the code
+        function someFunction() {
+            document.getElementById("outputText").innerHTML = someVariable;         //calls the global variable
+        }
+        
+    </script>
+</body>
+</html>

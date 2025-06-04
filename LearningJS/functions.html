@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1 onclick="toggleHeadingText()">Functions in JavaScript</h1>
+    <p  onclick="toggleHeadingText()">Functions are reusable blocks of code that perform a specific task.</p>
+    <p id="addition"></p>
+    <a href="variableScope.html">variable scope</a>
+    <script>
+        // Display the result of adding 500 and 748 in the "addition" paragraph
+        document.getElementById("addition").innerHTML = addNumbers(500, 748);
+
+        // Function to change text content of the heading
+        function toggleHeadingText() {
+            if (this.innerHTML === 'Functions in JavaScript') {
+                this.innerHTML = 'Are very useful';
+            } else {
+                this.innerHTML = 'Functions in JavaScript';
+            }
+        }
+        document.querySelector('h1').onclick = toggleHeadingText;
+
+        function addNumbers(num1, num2) {
+            // Return the sum of num1 and num2
+            return num1 + num2; 
+        }
+    </script>
+</body>
+</html>
